@@ -2,6 +2,7 @@ var app = require('express')();
 //var http = require('http').Server(app);
 //var io = require('socket.io')(http);
 var https = require('https');
+var http = require('http');
 var fs = require('fs');
 var crypto = require('crypto');
 
@@ -23,7 +24,7 @@ var options = {
   ca: fs.readFileSync(config.caPath)
 };
 
-var server = https.createServer(options, app);
+var server = config.ssl?https.createServer(options, app):http.createServer(app);
 server.listen(3000);
 var socketio = require('socket.io');
 var io = socketio.listen(server);
