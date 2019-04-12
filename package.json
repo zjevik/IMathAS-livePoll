@@ -1,0 +1,9 @@
+{
+  "name": "socket-livepoll",
+  "version": "0.0.1",
+  "description": "livepoll for IMathAS",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}

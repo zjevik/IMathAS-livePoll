@@ -1,0 +1,6 @@
+{
+    "livepollpassword": "testing",
+    "privateKeyPath": "./ssl/server-key.pem",
+    "certPath": "./ssl/server-cert.pem",
+    "caPath": "./ssl/server-csr.pem"
+  }
